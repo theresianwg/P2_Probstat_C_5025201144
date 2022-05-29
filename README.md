@@ -9,14 +9,16 @@ Carilah Standar Deviasi dari data selisih pasangan pengamatan tabel pada soal no
 selisih <- sd(x-y)
 print(selisih)
 ```
-maka hasilnya adalah `....`
+maka hasilnya adalah `6.359595`
 
 ### B
 Carilah nilai t (p-value)
 ```
 t.test (Y, X, paired = TRUE, var.equal = FALSE)
 ```
-maka hasilnya adalah `....`
+maka hasilnya adalah 
+t `7.6525` ,  p-value `6003e-05`
+mean of differences `16.22222`
 
 ### C
 Tentukanlah apakah terdapat pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴
@@ -28,7 +30,7 @@ c(-t.half.alpha, t.half.alpha)
 pval <- 2*pt(t, df=n-1)
 pval
 ```
-maka hasilnya `....`
+maka hasilnya `1.999433`
 
 ` Karena pvalue > 0,05 atau pvalue > alpha maka keputusan gagal tolak Hl0. Tidak ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas `
 
@@ -59,8 +61,6 @@ Hitung Sampel Statistik
 
 `tsum.test(mean.x = 3.64, s.x = 1.67, n.x = 19, mean.y = 2.79 , s.y = 1.32, n.y = 27, alternative = "greater", var.equal = TRUE)`
 
-maka hailnya `...`
-
 ### C
 Lakukan Uji Statistik (df =2)
 `xbar = 2.79
@@ -70,7 +70,7 @@ n = 27
 t = (xbar-mu0)/(s/sqrt(n)) 
 t`
 
-maka hasilnya `....`
+maka hasilnya `-3.346007`
 
 ### D
 Nilai Kritikal
@@ -78,7 +78,7 @@ Nilai Kritikal
 t.alpha = qt(1-alpha, df=2)  
 t.alpha`
 
-maka hasilnya `....`
+maka hasilnya `2.919986`
 
 ### E
 Keputusan
