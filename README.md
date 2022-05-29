@@ -89,3 +89,13 @@ Keputusan
 Kesimpulan
 
 `Tidak ada perbedaan pada rata-rata jumlah saham perusahaan di dua kota tersebut`
+
+
+## No. 4
+### A
+Buatlah masing masing jenis spesies menjadi 3 subjek "Grup" (grup 1,grup 2,grup 3). Lalu Gambarkan plot kuantil normal untuk setiap kelompok dan lihat apakah ada outlier utama dalam homogenitas varians.
+
+
+
+
+
