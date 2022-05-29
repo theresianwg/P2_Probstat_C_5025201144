@@ -127,4 +127,6 @@ Verifikasilah jawaban model 1 dengan Post-hoc test Tukey HSD, dari nilai p yang 
 ### F
 Visualisasikan data dengan ggplot2
 
-![4f](https://user-images.githubusercontent.com/81666422/170879637-ae24e83e-4169-4efd-9a96-ba56b16006bc.png)
+![4f](https://user-images.githubusercontent.com/81666422/170880484-40a6da7f-75ba-4010-a74c-346ba7976123.png)
+
+
