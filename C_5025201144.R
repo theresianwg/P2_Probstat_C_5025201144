@@ -51,7 +51,6 @@ zsum.test(mean.X = 23500, sigma.X = 3900, n.X = 100,
 #H0 : mu = mu0,mu tidak sama dengan mu0
 
 #b
-# B
 tsum.test(mean.x = 3.64, s.x = 1.67, n.x = 19, mean.y = 2.79 , s.y = 1.32, n.y = 27, alternative = "greater", var.equal = TRUE)
 
 #c
@@ -72,9 +71,3 @@ t.alpha
 
 #f
 #Tidak ada perbedaan pada rata-rata jumlah saham perusahaan di dua kota tersebut
-
-
-
-
-
-
