@@ -129,4 +129,47 @@ Visualisasikan data dengan ggplot2
 
 ![4f](https://user-images.githubusercontent.com/81666422/170880484-40a6da7f-75ba-4010-a74c-346ba7976123.png)
 
+## No. 5
+### A
+Buatlah plot sederhana untuk visualisasi data
+`
+plot sederhana
+qplot(x = Temp, y = Light, geom = "point", data = GTL) +
+  facet_grid(.~Glass, labeller = label_both)
 
+variabel untuk anova
+GTL$Glass <- as.factor(GTL$Glass)
+GTL$Temp_Factor <- as.factor(GTL$Temp)
+str(GTL)
+`
+### B
+Lakukan uji ANOVA dua arah
+`
+anova <- aov(Light ~ Glass*Temp_Factor, data = GTL)
+summary(anova)
+`
+
+### C
+Tampilkan tabel dengan mean dan standar deviasi keluaran cahaya untuk setiap perlakuan (kombinasi kaca pelat muka dan suhu operasi)
+`
+data_summary <- group_by(GTL, Glass, Temp) %>%
+  summarise(mean=mean(Light), sd=sd(Light)) %>%
+  arrange(desc(mean))
+print(data_summary)
+`
+
+### D
+Lakukan uji Tukey
+`
+print("Uji Tukey:")
+tukey <- TukeyHSD(anova)
+print(tukey)
+`
+
+### E
+Gunakan compact letter display untuk menunjukkan perbedaan signifikan antara uji Anova dan uji Tukey
+`
+print("Compact Letter Display:")
+tukey.cld <- multcompLetters4(anova, tukey)
+print(tukey.cld)
+`
